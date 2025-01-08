@@ -1,0 +1,835 @@
+2025-01-08 21:03:30,914 INFO    StreamThr :40160 [internal.py:wandb_internal():86] W&B internal server running at pid: 40160, started at: 2025-01-08 21:03:30.913061
+2025-01-08 21:03:30,917 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status
+2025-01-08 21:03:30,919 INFO    WriterThread:40160 [datastore.py:open_for_write():87] open: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/run-mjt5r1l5.wandb
+2025-01-08 21:03:30,926 DEBUG   SenderThread:40160 [sender.py:send():379] send: header
+2025-01-08 21:03:30,926 DEBUG   SenderThread:40160 [sender.py:send():379] send: run
+2025-01-08 21:03:31,745 INFO    SenderThread:40160 [dir_watcher.py:__init__():211] watching files in: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files
+2025-01-08 21:03:31,745 INFO    SenderThread:40160 [sender.py:_start_run_threads():1124] run started: mjt5r1l5 with start time 1736350410.914776
+2025-01-08 21:03:31,768 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: check_version
+2025-01-08 21:03:31,769 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: check_version
+2025-01-08 21:03:31,976 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: run_start
+2025-01-08 21:03:32,265 DEBUG   HandlerThread:40160 [system_info.py:__init__():26] System info init
+2025-01-08 21:03:32,265 DEBUG   HandlerThread:40160 [system_info.py:__init__():41] System info init done
+2025-01-08 21:03:32,265 INFO    HandlerThread:40160 [system_monitor.py:start():194] Starting system monitor
+2025-01-08 21:03:32,266 INFO    SystemMonitor:40160 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-01-08 21:03:32,266 INFO    HandlerThread:40160 [system_monitor.py:probe():214] Collecting system info
+2025-01-08 21:03:32,267 INFO    SystemMonitor:40160 [interfaces.py:start():190] Started cpu monitoring
+2025-01-08 21:03:32,268 INFO    SystemMonitor:40160 [interfaces.py:start():190] Started disk monitoring
+2025-01-08 21:03:32,270 INFO    SystemMonitor:40160 [interfaces.py:start():190] Started gpu monitoring
+2025-01-08 21:03:32,271 INFO    SystemMonitor:40160 [interfaces.py:start():190] Started memory monitoring
+2025-01-08 21:03:32,272 INFO    SystemMonitor:40160 [interfaces.py:start():190] Started network monitoring
+2025-01-08 21:03:32,323 DEBUG   HandlerThread:40160 [system_info.py:probe():150] Probing system
+2025-01-08 21:03:32,325 DEBUG   HandlerThread:40160 [gitlib.py:_init_repo():56] git repository is invalid
+2025-01-08 21:03:32,325 DEBUG   HandlerThread:40160 [system_info.py:probe():198] Probing system done
+2025-01-08 21:03:32,325 DEBUG   HandlerThread:40160 [system_monitor.py:probe():223] {'os': 'Linux-4.15.0-213-generic-x86_64-with-glibc2.27', 'python': '3.10.12', 'heartbeatAt': '2025-01-08T15:33:32.323860', 'startedAt': '2025-01-08T15:33:30.894405', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home2/kyrylo/Assignments/MLNS-1/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'gnode073', 'username': 'kyrylo', 'executable': '/home2/kyrylo/Minimal/bin/python3', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1321.4091250000001, 'min': 1200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 1200.408, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.698, 'min': 1200.0, 'max': 3400.0}, {'current': 1229.722, 'min': 1200.0, 'max': 3400.0}, {'current': 1311.578, 'min': 1200.0, 'max': 3400.0}, {'current': 1539.47, 'min': 1200.0, 'max': 3400.0}, {'current': 1204.091, 'min': 1200.0, 'max': 3400.0}, {'current': 1796.688, 'min': 1200.0, 'max': 3400.0}, {'current': 1719.138, 'min': 1200.0, 'max': 3400.0}, {'current': 1325.89, 'min': 1200.0, 'max': 3400.0}, {'current': 1203.317, 'min': 1200.0, 'max': 3400.0}, {'current': 1203.173, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.611, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.995, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.582, 'min': 1200.0, 'max': 3400.0}, {'current': 1203.003, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.727, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.847, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.979, 'min': 1200.0, 'max': 3400.0}, {'current': 1203.311, 'min': 1200.0, 'max': 3400.0}, {'current': 1202.423, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.789, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.402, 'min': 1200.0, 'max': 3400.0}, {'current': 1242.133, 'min': 1200.0, 'max': 3400.0}, {'current': 1275.655, 'min': 1200.0, 'max': 3400.0}, {'current': 1501.274, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.638, 'min': 1200.0, 'max': 3400.0}, {'current': 2273.878, 'min': 1200.0, 'max': 3400.0}, {'current': 1800.726, 'min': 1200.0, 'max': 3400.0}, {'current': 1374.562, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.094, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.232, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.616, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.183, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.617, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.271, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.748, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.745, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.044, 'min': 1200.0, 'max': 3400.0}, {'current': 1200.74, 'min': 1200.0, 'max': 3400.0}, {'current': 1201.061, 'min': 1200.0, 'max': 3400.0}], 'disk': {'/': {'total': 219.00129318237305, 'used': 89.39059066772461}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 125.7824478149414}}
+2025-01-08 21:03:32,325 INFO    HandlerThread:40160 [system_monitor.py:probe():224] Finished collecting system info
+2025-01-08 21:03:32,325 INFO    HandlerThread:40160 [system_monitor.py:probe():227] Publishing system info
+2025-01-08 21:03:32,325 DEBUG   HandlerThread:40160 [system_info.py:_save_code():44] Saving code
+2025-01-08 21:03:32,329 DEBUG   HandlerThread:40160 [system_info.py:_save_code():65] Saving code done
+2025-01-08 21:03:32,331 INFO    HandlerThread:40160 [system_monitor.py:probe():229] Finished publishing system info
+2025-01-08 21:03:32,378 DEBUG   SenderThread:40160 [sender.py:send():379] send: files
+2025-01-08 21:03:32,379 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2025-01-08 21:03:32,379 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file code/train.py with policy now
+2025-01-08 21:03:32,751 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_created():271] file/dir created: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-metadata.json
+2025-01-08 21:03:32,751 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_created():271] file/dir created: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/code/train.py
+2025-01-08 21:03:32,752 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_created():271] file/dir created: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/code
+2025-01-08 21:03:33,528 INFO    wandb-upload_0:40160 [upload_job.py:push():131] Uploaded file /tmp/tmpz0xtbl7xwandb/incey3ap-wandb-metadata.json
+2025-01-08 21:03:33,537 INFO    wandb-upload_1:40160 [upload_job.py:push():131] Uploaded file /tmp/tmpz0xtbl7xwandb/wq1ol69j-code/train.py
+2025-01-08 21:03:36,381 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:03:39,483 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: python_packages
+2025-01-08 21:03:39,483 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: python_packages
+2025-01-08 21:03:39,487 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:03:39,488 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:03:39,531 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:03:39,755 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_created():271] file/dir created: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/requirements.txt
+2025-01-08 21:03:39,773 DEBUG   SenderThread:40160 [sender.py:send():379] send: telemetry
+2025-01-08 21:03:41,774 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:03:43,096 DEBUG   SenderThread:40160 [sender.py:send():379] send: telemetry
+2025-01-08 21:03:43,552 DEBUG   SenderThread:40160 [sender.py:send():379] send: telemetry
+2025-01-08 21:03:44,761 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_created():271] file/dir created: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:46,764 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:46,987 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:03:47,736 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:47,738 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:47,738 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:47,746 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:47,766 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_created():271] file/dir created: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:49,296 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:49,297 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:49,298 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:49,301 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:49,769 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:50,770 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:50,867 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:50,868 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:50,868 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:50,870 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:51,772 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:52,439 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:03:52,439 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:52,441 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:52,442 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:52,443 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:52,773 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:52,773 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:54,046 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:54,048 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:54,048 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:54,050 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:54,486 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:03:54,486 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:03:54,487 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:03:54,776 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:54,776 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:55,654 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:55,655 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:55,655 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:55,657 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:55,777 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:56,779 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:57,211 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:57,212 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:57,212 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:57,214 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:57,780 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:03:58,215 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:03:58,773 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:03:58,774 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:03:58,774 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:03:58,776 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:03:58,781 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:03:58,782 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:00,350 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:00,351 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:00,351 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:00,352 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:00,784 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:00,784 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:01,932 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:01,934 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:01,935 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:01,936 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:02,787 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:02,787 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:03,496 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:03,502 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:03,810 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:03,811 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:03,812 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:04,789 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:04,790 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:04,790 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/config.yaml
+2025-01-08 21:04:05,129 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:05,130 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:05,131 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:05,133 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:05,791 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:06,778 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:06,779 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:06,780 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:06,781 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:06,792 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:06,793 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:08,377 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:08,379 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:08,380 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:08,381 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:08,796 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:08,796 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:09,382 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:09,543 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:04:09,544 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:04:09,549 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:04:09,943 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:09,945 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:09,946 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:09,947 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:10,798 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:10,799 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:11,514 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:11,515 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:11,515 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:11,517 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:11,799 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:12,800 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:13,046 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:13,047 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:13,047 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:13,049 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:13,802 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:14,638 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:14,638 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:14,639 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:14,639 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:14,641 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:14,804 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:14,805 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:16,231 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:16,233 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:16,233 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:16,234 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:16,807 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:16,807 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:17,822 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:17,824 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:17,824 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:17,826 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:18,810 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:18,810 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:19,345 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:19,346 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:19,347 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:19,349 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:19,811 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:20,351 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:20,812 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:21,094 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:21,095 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:21,096 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:21,099 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:21,813 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:22,682 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:22,684 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:22,684 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:22,686 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:22,815 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:22,815 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:24,272 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:24,273 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:24,273 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:24,275 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:24,638 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:04:24,642 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:04:24,643 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:04:24,817 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:24,818 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:25,869 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:25,911 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:25,913 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:25,913 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:25,915 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:26,820 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:26,821 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:27,364 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:27,365 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:27,365 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:27,367 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:27,822 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:28,823 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:28,961 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:28,963 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:28,963 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:28,965 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:29,824 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:30,559 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:30,560 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:30,561 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:30,563 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:30,826 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:30,827 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:31,564 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:32,106 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:32,107 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:32,108 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:32,109 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:32,273 DEBUG   SystemMonitor:40160 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-01-08 21:04:32,276 DEBUG   SenderThread:40160 [sender.py:send():379] send: stats
+2025-01-08 21:04:32,829 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:32,829 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:33,651 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:33,653 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:33,653 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:33,655 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:33,830 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:34,831 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:35,230 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:35,231 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:35,231 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:35,232 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:35,833 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:36,782 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:36,783 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:36,783 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:36,784 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:36,786 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:36,834 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:36,835 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:38,326 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:38,327 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:38,327 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:38,331 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:38,837 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:38,837 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:39,542 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:04:39,542 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:04:39,542 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:04:39,935 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:39,937 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:39,937 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:39,940 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:40,839 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:40,840 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:41,442 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:41,443 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:41,443 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:41,445 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:41,841 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:42,446 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:42,842 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:42,993 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:42,994 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:42,994 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:42,996 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:43,844 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:44,602 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:44,604 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:44,604 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:44,606 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:44,845 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:44,846 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:46,162 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:46,168 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:46,168 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:46,170 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:46,848 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:46,848 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:47,732 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:47,732 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:47,733 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:47,734 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:47,736 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:47,849 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:48,850 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:49,265 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:49,267 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:49,267 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:49,269 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:49,852 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:50,853 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:50,888 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:50,890 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:50,890 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:50,892 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:51,855 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:52,442 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:52,443 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:52,443 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:52,445 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:52,856 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:52,857 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:53,446 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:54,004 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:54,005 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:54,006 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:54,008 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:54,543 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:04:54,543 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:04:54,544 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:04:54,859 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:54,860 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:55,639 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:55,642 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:55,642 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:55,644 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:55,860 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:56,862 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:57,278 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:57,280 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:57,280 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:57,281 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:57,863 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:04:58,864 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:04:59,100 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:04:59,101 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:04:59,102 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:04:59,102 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:04:59,104 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:04:59,865 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:00,721 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:00,722 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:00,722 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:00,724 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:00,866 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:00,867 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:02,278 DEBUG   SenderThread:40160 [sender.py:send():379] send: stats
+2025-01-08 21:05:02,302 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:02,303 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:02,303 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:02,305 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:02,869 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:02,869 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:03,817 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:03,818 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:03,818 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:03,820 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:03,870 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:04,822 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:04,871 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:05,395 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:05,397 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:05,397 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:05,399 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:05,873 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:06,874 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:06,959 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:06,960 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:06,961 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:06,962 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:07,875 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:08,556 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:08,557 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:08,558 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:08,559 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:08,877 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:08,878 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:09,591 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:05:09,681 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:05:09,682 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:05:10,012 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:10,141 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:10,143 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:10,143 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:10,146 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:10,880 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:10,881 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:11,736 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:11,738 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:11,738 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:11,745 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:11,881 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:12,883 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:13,330 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:13,331 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:13,331 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:13,333 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:13,884 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:14,886 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:14,922 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:14,924 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:14,924 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:14,926 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:15,887 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:15,927 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:16,511 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:16,512 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:16,513 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:16,514 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:16,889 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:16,889 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:18,038 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:18,040 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:18,040 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:18,042 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:18,892 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:18,893 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:19,763 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:19,765 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:19,765 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:19,767 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:19,893 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:20,894 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:21,345 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:21,346 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:21,346 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:21,347 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:21,349 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:21,895 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:22,877 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:22,878 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:22,878 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:22,880 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:22,897 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:22,897 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:24,451 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:24,453 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:24,453 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:24,455 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:24,670 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:05:24,671 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:05:24,723 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:05:24,900 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:24,900 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:26,084 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:26,085 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:26,086 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:26,087 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:26,902 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:26,903 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:27,088 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:27,668 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:27,669 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:27,670 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:27,671 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:27,903 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:28,905 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:29,208 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:29,209 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:29,210 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:29,211 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:29,906 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:30,806 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:30,807 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:30,808 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:30,810 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:30,908 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:30,908 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:32,281 DEBUG   SenderThread:40160 [sender.py:send():379] send: stats
+2025-01-08 21:05:32,282 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:32,382 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:32,383 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:32,383 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:32,385 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:32,910 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:32,911 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:33,961 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:33,962 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:33,962 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:33,964 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:34,913 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:34,913 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:35,486 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:35,494 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:35,494 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:35,496 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:35,914 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:36,916 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:37,067 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:37,068 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:37,068 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:37,070 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:37,917 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:38,071 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:38,698 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:38,699 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:38,700 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:38,701 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:38,919 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:38,920 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:39,565 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:05:39,566 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:05:39,678 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:05:40,275 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:40,276 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:40,277 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:40,278 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:40,922 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:40,922 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:41,836 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:41,838 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:41,838 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:41,840 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:41,923 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:42,924 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:43,380 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:43,381 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:43,382 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:43,382 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:43,384 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:43,926 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:44,927 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:45,003 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:45,004 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:45,004 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:45,006 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:45,928 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:46,610 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:46,611 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:46,611 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:46,613 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:46,930 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:46,930 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:48,178 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:48,179 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:48,180 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:48,182 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:48,932 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:48,933 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:49,183 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:49,736 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:49,737 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:49,737 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:49,739 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:49,933 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:50,935 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:51,651 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:51,652 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:51,653 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:51,654 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:51,936 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:52,937 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:53,310 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:53,316 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:53,317 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:53,318 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:53,938 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:54,319 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:54,585 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:05:54,585 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:05:54,620 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:05:54,940 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:54,949 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:54,950 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:54,950 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:54,952 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:55,941 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:56,627 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:56,628 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:56,628 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:56,630 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:56,943 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:56,943 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:58,222 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:58,223 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:58,223 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:58,225 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:58,945 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:05:58,946 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:05:59,858 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:05:59,858 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:05:59,860 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:05:59,860 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:05:59,862 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:05:59,946 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:00,948 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:01,455 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:01,456 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:01,457 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:01,458 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:01,948 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:02,283 DEBUG   SenderThread:40160 [sender.py:send():379] send: stats
+2025-01-08 21:06:02,950 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:03,027 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:03,028 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:03,028 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:03,031 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:03,951 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:04,649 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:04,650 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:04,651 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:04,653 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:04,952 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:04,953 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:05,654 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:06:06,212 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:06,213 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:06,213 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:06,215 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:06,955 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:06,955 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:07,792 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:07,793 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:07,793 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:07,795 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:07,956 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:08,957 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:09,321 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:09,322 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:09,322 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:09,324 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:09,587 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:06:09,588 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:06:09,631 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:06:09,958 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:10,883 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:10,884 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:06:10,884 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:10,885 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:10,886 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:10,960 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:10,960 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:12,393 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:12,394 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:12,394 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:12,396 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:12,962 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:12,963 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:13,916 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:13,918 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:13,918 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:13,919 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:13,963 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:14,965 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:15,491 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:15,492 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:15,492 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:15,494 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:15,966 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:16,494 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:06:16,967 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:17,095 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:17,097 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:17,097 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:17,099 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:17,969 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:18,621 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:18,622 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:18,623 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:18,624 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:18,970 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:18,971 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:20,135 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:20,136 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:20,136 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:20,138 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:20,973 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:20,974 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:21,605 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:06:21,605 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:21,606 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:21,607 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:21,608 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:21,976 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:22,978 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:23,149 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:23,151 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:23,151 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:23,153 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:23,979 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:24,586 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: stop_status
+2025-01-08 21:06:24,587 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: stop_status
+2025-01-08 21:06:24,630 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:06:24,683 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: partial_history
+2025-01-08 21:06:24,942 DEBUG   SenderThread:40160 [sender.py:send():379] send: history
+2025-01-08 21:06:24,942 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: summary_record
+2025-01-08 21:06:24,944 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:24,945 DEBUG   SenderThread:40160 [sender.py:send():379] send: exit
+2025-01-08 21:06:24,945 INFO    SenderThread:40160 [sender.py:send_exit():586] handling exit code: 0
+2025-01-08 21:06:24,946 INFO    SenderThread:40160 [sender.py:send_exit():588] handling runtime: 172
+2025-01-08 21:06:24,947 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:24,948 INFO    SenderThread:40160 [sender.py:send_exit():594] send defer
+2025-01-08 21:06:24,948 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:24,948 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 0
+2025-01-08 21:06:24,949 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:24,949 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 0
+2025-01-08 21:06:24,949 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 1
+2025-01-08 21:06:24,949 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:24,949 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 1
+2025-01-08 21:06:24,950 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:24,950 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 1
+2025-01-08 21:06:24,950 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 2
+2025-01-08 21:06:24,950 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:24,951 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 2
+2025-01-08 21:06:24,951 INFO    HandlerThread:40160 [system_monitor.py:finish():203] Stopping system monitor
+2025-01-08 21:06:24,951 DEBUG   SystemMonitor:40160 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-01-08 21:06:24,951 DEBUG   SystemMonitor:40160 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-01-08 21:06:24,954 INFO    HandlerThread:40160 [interfaces.py:finish():202] Joined cpu monitor
+2025-01-08 21:06:24,955 INFO    HandlerThread:40160 [interfaces.py:finish():202] Joined disk monitor
+2025-01-08 21:06:24,982 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:24,982 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:25,149 INFO    HandlerThread:40160 [interfaces.py:finish():202] Joined gpu monitor
+2025-01-08 21:06:25,150 INFO    HandlerThread:40160 [interfaces.py:finish():202] Joined memory monitor
+2025-01-08 21:06:25,150 INFO    HandlerThread:40160 [interfaces.py:finish():202] Joined network monitor
+2025-01-08 21:06:25,151 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:25,151 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 2
+2025-01-08 21:06:25,151 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 3
+2025-01-08 21:06:25,151 DEBUG   SenderThread:40160 [sender.py:send():379] send: stats
+2025-01-08 21:06:25,152 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:25,152 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 3
+2025-01-08 21:06:25,153 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:25,153 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 3
+2025-01-08 21:06:25,153 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 4
+2025-01-08 21:06:25,153 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:25,153 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 4
+2025-01-08 21:06:25,154 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:25,154 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 4
+2025-01-08 21:06:25,154 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 5
+2025-01-08 21:06:25,154 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:25,154 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 5
+2025-01-08 21:06:25,155 DEBUG   SenderThread:40160 [sender.py:send():379] send: summary
+2025-01-08 21:06:25,156 INFO    SenderThread:40160 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-01-08 21:06:25,157 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:25,157 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 5
+2025-01-08 21:06:25,157 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 6
+2025-01-08 21:06:25,157 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:25,158 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 6
+2025-01-08 21:06:25,158 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:25,158 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 6
+2025-01-08 21:06:25,158 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 7
+2025-01-08 21:06:25,159 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:06:25,159 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:25,159 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 7
+2025-01-08 21:06:25,160 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:25,160 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 7
+2025-01-08 21:06:25,687 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: poll_exit
+2025-01-08 21:06:25,983 INFO    Thread-12 :40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:26,297 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 8
+2025-01-08 21:06:26,297 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: poll_exit
+2025-01-08 21:06:26,298 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:26,298 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 8
+2025-01-08 21:06:26,299 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:26,299 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 8
+2025-01-08 21:06:26,299 INFO    SenderThread:40160 [job_builder.py:build():318] Attempting to build job artifact
+2025-01-08 21:06:26,300 INFO    SenderThread:40160 [job_builder.py:_get_source_type():466] no source found
+2025-01-08 21:06:26,300 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 9
+2025-01-08 21:06:26,300 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:26,301 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 9
+2025-01-08 21:06:26,301 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:26,301 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 9
+2025-01-08 21:06:26,301 INFO    SenderThread:40160 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-01-08 21:06:26,687 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: poll_exit
+2025-01-08 21:06:26,985 INFO    SenderThread:40160 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:26,986 INFO    SenderThread:40160 [dir_watcher.py:finish():388] scan: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files
+2025-01-08 21:06:26,986 INFO    SenderThread:40160 [dir_watcher.py:finish():402] scan save: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/requirements.txt requirements.txt
+2025-01-08 21:06:26,987 INFO    SenderThread:40160 [dir_watcher.py:finish():402] scan save: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json wandb-summary.json
+2025-01-08 21:06:26,987 INFO    SenderThread:40160 [dir_watcher.py:finish():402] scan save: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/config.yaml config.yaml
+2025-01-08 21:06:26,993 INFO    SenderThread:40160 [dir_watcher.py:finish():402] scan save: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log output.log
+2025-01-08 21:06:27,004 INFO    SenderThread:40160 [dir_watcher.py:finish():402] scan save: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-metadata.json wandb-metadata.json
+2025-01-08 21:06:27,005 INFO    SenderThread:40160 [dir_watcher.py:finish():402] scan save: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/code/train.py code/train.py
+2025-01-08 21:06:27,005 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 10
+2025-01-08 21:06:27,009 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: poll_exit
+2025-01-08 21:06:27,009 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:27,010 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 10
+2025-01-08 21:06:27,010 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:27,011 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 10
+2025-01-08 21:06:27,011 INFO    SenderThread:40160 [file_pusher.py:finish():172] shutting down file pusher
+2025-01-08 21:06:27,658 INFO    wandb-upload_0:40160 [upload_job.py:push():131] Uploaded file /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/requirements.txt
+2025-01-08 21:06:27,663 INFO    wandb-upload_1:40160 [upload_job.py:push():131] Uploaded file /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/wandb-summary.json
+2025-01-08 21:06:27,689 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: poll_exit
+2025-01-08 21:06:27,689 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: poll_exit
+2025-01-08 21:06:27,816 INFO    wandb-upload_2:40160 [upload_job.py:push():131] Uploaded file /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/config.yaml
+2025-01-08 21:06:27,850 INFO    wandb-upload_3:40160 [upload_job.py:push():131] Uploaded file /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/files/output.log
+2025-01-08 21:06:28,050 INFO    Thread-11 (_thread_body):40160 [sender.py:transition_state():614] send defer: 11
+2025-01-08 21:06:28,051 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:28,051 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 11
+2025-01-08 21:06:28,052 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:28,052 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 11
+2025-01-08 21:06:28,052 INFO    SenderThread:40160 [file_pusher.py:join():178] waiting for file pusher
+2025-01-08 21:06:28,053 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 12
+2025-01-08 21:06:28,053 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:28,053 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 12
+2025-01-08 21:06:28,054 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:28,054 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 12
+2025-01-08 21:06:28,054 INFO    SenderThread:40160 [file_stream.py:finish():614] file stream finish called
+2025-01-08 21:06:28,690 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: poll_exit
+2025-01-08 21:06:28,969 INFO    SenderThread:40160 [file_stream.py:finish():618] file stream finish is done
+2025-01-08 21:06:28,969 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 13
+2025-01-08 21:06:28,969 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: poll_exit
+2025-01-08 21:06:28,969 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:28,970 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 13
+2025-01-08 21:06:28,970 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:28,970 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 13
+2025-01-08 21:06:28,971 INFO    SenderThread:40160 [sender.py:transition_state():614] send defer: 14
+2025-01-08 21:06:28,971 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: defer
+2025-01-08 21:06:28,971 INFO    HandlerThread:40160 [handler.py:handle_request_defer():172] handle defer: 14
+2025-01-08 21:06:28,972 DEBUG   SenderThread:40160 [sender.py:send():379] send: final
+2025-01-08 21:06:28,972 DEBUG   SenderThread:40160 [sender.py:send():379] send: footer
+2025-01-08 21:06:28,973 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: defer
+2025-01-08 21:06:28,973 INFO    SenderThread:40160 [sender.py:send_request_defer():610] handle sender defer: 14
+2025-01-08 21:06:28,974 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: poll_exit
+2025-01-08 21:06:28,975 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: poll_exit
+2025-01-08 21:06:28,976 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: poll_exit
+2025-01-08 21:06:28,977 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: poll_exit
+2025-01-08 21:06:28,977 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: server_info
+2025-01-08 21:06:28,978 DEBUG   SenderThread:40160 [sender.py:send_request():406] send_request: server_info
+2025-01-08 21:06:28,981 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: get_summary
+2025-01-08 21:06:28,982 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: sampled_history
+2025-01-08 21:06:28,987 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: internal_messages
+2025-01-08 21:06:29,296 INFO    MainThread:40160 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2025-01-08 21:06:29,298 INFO    MainThread:40160 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2025-01-08 21:06:29,298 INFO    MainThread:40160 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2025-01-08 21:06:29,299 DEBUG   HandlerThread:40160 [handler.py:handle_request():146] handle_request: shutdown
+2025-01-08 21:06:29,299 INFO    HandlerThread:40160 [handler.py:finish():866] shutting down handler
+2025-01-08 21:06:29,978 INFO    WriterThread:40160 [datastore.py:close():296] close: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210330-mjt5r1l5/run-mjt5r1l5.wandb
+2025-01-08 21:06:30,296 INFO    SenderThread:40160 [sender.py:finish():1546] shutting down sender
+2025-01-08 21:06:30,297 INFO    SenderThread:40160 [file_pusher.py:finish():172] shutting down file pusher
+2025-01-08 21:06:30,297 INFO    SenderThread:40160 [file_pusher.py:join():178] waiting for file pusher

@@ -1,0 +1,91 @@
+2025-01-08 21:00:48,890 INFO    StreamThr :39991 [internal.py:wandb_internal():86] W&B internal server running at pid: 39991, started at: 2025-01-08 21:00:48.889453
+2025-01-08 21:00:48,893 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: status
+2025-01-08 21:00:48,920 INFO    WriterThread:39991 [datastore.py:open_for_write():87] open: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210048-jqfhry9y/run-jqfhry9y.wandb
+2025-01-08 21:00:48,922 DEBUG   SenderThread:39991 [sender.py:send():379] send: header
+2025-01-08 21:00:48,922 DEBUG   SenderThread:39991 [sender.py:send():379] send: run
+2025-01-08 21:00:53,922 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:00:58,924 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:03,925 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:08,927 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:13,928 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:18,929 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:23,931 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:28,933 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:33,934 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:38,936 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:43,937 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:48,939 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:53,100 INFO    SenderThread:39991 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+  File "/home2/kyrylo/.pyenv/versions/3.10.12/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/home2/kyrylo/.pyenv/versions/3.10.12/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/home2/kyrylo/.pyenv/versions/3.10.12/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home2/kyrylo/.pyenv/versions/3.10.12/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home2/kyrylo/.pyenv/versions/3.10.12/lib/python3.10/ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "/home2/kyrylo/.pyenv/versions/3.10.12/lib/python3.10/ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/connectionpool.py", line 539, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home2/kyrylo/Minimal/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+2025-01-08 21:01:53,940 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:01:58,942 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:02:03,943 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:02:08,945 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:02:13,946 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: keepalive
+2025-01-08 21:02:18,948 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: cancel
+2025-01-08 21:02:18,948 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: cancel
+2025-01-08 21:02:18,948 DEBUG   SenderThread:39991 [sender.py:send():388] Record cancelled: run
+2025-01-08 21:02:18,949 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: status_report
+2025-01-08 21:02:19,127 DEBUG   HandlerThread:39991 [handler.py:handle_request():146] handle_request: shutdown
+2025-01-08 21:02:19,128 INFO    HandlerThread:39991 [handler.py:finish():866] shutting down handler
+2025-01-08 21:02:19,949 INFO    SenderThread:39991 [sender.py:finish():1546] shutting down sender
+2025-01-08 21:02:19,950 INFO    WriterThread:39991 [datastore.py:close():296] close: /home2/kyrylo/Assignments/MLNS-1/wandb/run-20250108_210048-jqfhry9y/run-jqfhry9y.wandb
