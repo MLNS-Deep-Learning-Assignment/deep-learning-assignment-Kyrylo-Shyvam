@@ -1,20 +1,54 @@
-# Deep-Learning-Assignment
-ML4Science Assignment
+# MLNS-1
 
-*Problem statement*: Given an image (and its label value) predict the sum of the digits in the image. 
+### Model
 
-**DEADLINE for submission:**
-- Preliminary version by 10pm on 08-Jan-2025 (34% weight-age) to perform baseline using standard CNN.
-- Final version due by 10pm on 15-Jan-2025 (66% weight-age): implement your 'own' model and compare to baseline above.
+1. A Resnet50/Resnet101 model for all classes 0-36 (all possible sums)
+2. A ResNet model trained to predict each digit separately trained on synthetic data.
 
-1. You can train using any model (FCNN, CNN, RNN etc etc)
-2. Training data and labels are given. [See DL-Project for the data; data files are "data*.npy" and label files are "lab*.npy" and an load_data.py illustrates how to access data and labels]
-3. Additional data can be taken from the internet too to train the model. 
-4. Test data will be given later on against which accuracy will be calculated. 
-5. Training has to be done in Ada.
-6. The final code should be uploaded to Github Repo.
-7. Plagiarism will not be entertained. The entire code should be written from scratch.
-8. Example code illustrating how to load the data, and one example and its label value demonstrated in below screenshot: 
+### Extra additions
 
+- **Synthetic data** - Since our data is not enough (only 10k examples) we can generate synthetic dataset to improve performance and since we can generate data ourselves we have also information of what individual digit is.
+    
+![./images/synthetic_data_1.png](./images/synthetic_data_1.png)
+    
+![./images/synthetic_data_1.png](./images/synthetic_data_2.png)
 
-![problem_statement](https://user-images.githubusercontent.com/24211231/212101787-250f8516-9ccb-4262-8abe-ead5b249b2cc.png)
+- **EMA (Exponential moving average)** - We can observe that training procedure is not stable. So we introduce EMA to enable more stable training.
+
+![./images/ema_effect.png](./images/ema_effect.png)
+
+### **Results:**
+
+- Baseline = ~10%
+- Resnet50 trained from scratch = ~30%
+- Resnet50 with EMA = ~90%
+- Resnet50/101 trained exclusively on synthetic data = ~50%
+
+### **Observations**
+
+- **Small model vs big model:** We know that big models overfit on the data, and since this dataset is MNIST like (almost trivial) I thought 4 layer Conv network is enough.
+    - However experiments show that big (50 layer network) is able to represent complicated distribution (addition is non-trivial) much better than simple models. Even 101 layer network has no fast overfitting.
+    - Experiments with Resnet18 show that network is not able to learn at all, which means it is a matter of scale not just architecture
+    
+    ![./images/model_size_comparison.png](./images/model_size_comparison.png)
+    
+    - **Very unstable training even al small learning rates:** Training is heavily unstable, adding EMA has improved it
+    
+    ![images/unstable_training.png](./images/unstable_training.png)
+    
+- **Regular data vs synthetic data:** Since data is scarse we can generate a bigger synthetic dataset. The big issue is synthetic dataset should be follow distribution of test set. My pipeline can get ~50% accuracy of test set, without ever seeing any example once.
+- **Predicting sum vs predicting each digit separately:** The task of predicting final sum can be simplified into predicting 4 digits. Once we have synthetic data, the constraints put on tasks make it easier to approach.
+- **Pretrained vs training from scratch:** ResNet initialized from scratch severally underperformed the version trained on ImageNet. Intrestingly the model which gives better performance on ImageNet (and thus overfits on it) is worse on this dataset.
+- **Big models do not overfit:** Below image shows model continuing to improve test accuracy on a very different dataset when trained on synthetic dataset even when 100% accuracy and 1e-5 loss is reached.
+
+![./images/no_overfitting.png](./images/no_overfitting.png)
+
+**Hyperparameters**
+
+- Lr = 0.001
+- Weight decay in regularization helps in reducing overfitting
+- EMA beta coefficient: 0.99
+
+**Future approach**
+
+- Try combining synthetic data loss, with real dataset.
