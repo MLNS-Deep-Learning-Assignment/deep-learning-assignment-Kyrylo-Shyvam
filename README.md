@@ -52,3 +52,7 @@
 **Future approach**
 
 - Try combining synthetic data loss, with real dataset.
+
+**Training info**
+
+- Available at: https://wandb.ai/grok-x/MLNS-1/workspace?nw=nwuserkyryloshyvam
